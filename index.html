@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/styles.css">
     <title>História Política do Brasil</title>
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
 <body>
+     <div class="stars"></div> <!-- Adicionando o elemento com a classe stars -->
+
     <header>
         <h1>História Política do Brasil</h1>
-        <p>A política brasileira desde de a constituição de 1988.</p>
-
         <nav>
             <ul>
+                <li><a href="#sobre">Sobre</a></li> 
                 <li class="dropdown">
                     <a href="#constituição">História Constitucional</a>
                     <ul class="dropdown-content">
@@ -65,6 +66,15 @@
     </header>
 
     <main>
+        <section id="sobre">
+            <h2>SOBRE</h2>
+            <p>Esse site tem por objetivo auxiliar os estudantes do 3º ano do Ensino Médio a estudar para o Avalia Sesi que irá ocorrer em Outubro.  
+                Aqui você encontrará informações sobre a história política do Brasil, incluindo a evolução das constituições, períodos de democracia e ditaduras, políticas econômicas, direitos humanos e sociais,
+                 além de recursos complementares como mapas mentais, simulados e vídeos aulas.</p>
+            <p>O conteúdo é organizado de forma a facilitar o estudo e a compreensão dos principais temas relacionados à política brasileira, com foco na história recente do país.</p>
+            <p>Esperamos que este material seja útil para sua preparação e que contribua para o seu aprendizado sobre a história política do Brasil.</p>
+        </section>
+
         <section id="constituição">
             <h2>História Constitucional</h2>
             <p>A história constitucional do Brasil é marcada por diversas constituições que refletem as mudanças políticas e sociais do país.</p>
@@ -132,6 +142,29 @@
 
             <h3 id="galeria">Mapas Mentais</h3>
             <p>Mapas mentais para facilitar a compreensão dos principais temas abordados.</p>
+            <div class="galeriamapa">
+                <div>
+                    <img src="static/img/mapa1.webp" alt="Mapa mental sobre os planos econômicos na nova rebública.">
+                </div>
+                <div>
+                    <img src="static/img/mapa2.jpg" alt="Mapa mental sobre a histórias das constituições do Brasil.">
+                </div>
+                <div>
+                    <img src="static\img\mapa3.jpg" alt="Mapa mental sobre a histórias das constituições do Brasil.">
+                </div>
+                <div>
+                    <img src="static\img\mapa4.png" alt="Mapa mental sobre a ditadura militar.">
+                </div>
+                <div>
+                    <img src="static\img\mapa5.webp" alt="Mapa mental sobre regimes de governo.">
+                </div>
+                <div>
+                    <img src="static\img\mapa6.png" alt="Mapa mental sobre ética e democracia.">
+                </div>
+                <div>
+                    <img src="static\img\mapa7.png" alt="Mapa mental sobre os planos ecônomicos.">
+                </div>
+            </div>
 
             <h3 id="forms">Simulados e lista de questões</h3>
             <p>Testes e listas de questões para praticar e revisar os conteúdos estudados.</p>
@@ -143,7 +176,16 @@
         <section id="contato">
             <h2>Contato</h2>
             <p>Para dúvidas, sugestões ou mais informações, entre em contato conosco.</p>
-        </section>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>  
     </main>
     
     
